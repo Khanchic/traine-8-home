@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="./css/main.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <button class="header__button">Логотип</button>
+            </div>
+        </div>
+        <div class="header__line">
+        </div>
+    </header>
+<main>
+    <section class="section-1">
+        <div class="container">
+        <h1 class="section-1__title">Заголовок первой секции</h1>
+    <div class="block-1">
+        <ul class="block-1__list">
+            <li class="block-1__item block-1__item__grey">1</li>
+        </ul>
+    </div> 
+</div>
+<section class="section-1">
+    <div class="container">
+        <h1 class="section-1__title">Заголовок второй секции секции</h1>
+        <div class="block-1">
+            <ul class="block-1__list">
+                <li class="block-1__item block-1__item__grey">1</li>
+                <li class="block-1__item block-1__item__black">2</li>
+                <li class="block-1__item block-1__item__green">3</li>
+                <li class="block-1__item block-1__item__green">3</li>
+            </ul>
+        </div>
+    </div>
+
+<section class="section-1">
+    <div class="container">
+        <h1 class="section-1__title">Заголовок третей секции секции</h1>
+        <div class="block-1">
+            <ul class="block-1__list">
+                <li class="block-1__item block-1__item__grey">1</li>
+                <li class="block-1__item block-1__item__black">2</li>
+                <li class="block-1__item block-1__item__green">3</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <section class="section-1">
+        <div class="container">
+            <h1 class="section-1__title">Заголовок четвертой секции секции</h1>
+            <div class="block-1">
+                <ul class="block-1__list">
+                    <li class="block-1__item block-1__item__grey">1</li>
+                    <li class="block-1__item block-1__item__black">2</li>
+                    <li class="block-1__item block-1__item__green">3</li>
+                    <li class="block-1__item block-1__item__grey">1</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <section class="section-1">
+            <div class="container">
+                <h1 class="section-1__title">Заголовок пятой секции секции</h1>
+                <div class="block-1">
+                    <ul class="block-1__list">
+                        <li class="block-1__item block-1__item__grey">1</li>
+                        <li class="block-1__item block-1__item__black">2</li>
+                        <li class="block-1__item block-1__item__green">3</li>
+                        <li class="block-1__item block-1__item__grey">1</li>
+                        <li class="block-1__item block-1__item__black">2</li>
+                        <li class="block-1__item block-1__item__green">3</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+  <footer>
+    
+  </footer>
+
+
+    <!-- <section >
+        <button type="button" class="hero__button" data-modal-open>Заказать услуг</button>
+    </section> -->
+    <!-- <div class="backdrop  is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="model_buttom"><svg class="modal_x" width="11" height="11">
+                    <use href="./image/iconns.svg#icon-modal_x"></use>
+                </svg></button>
+            <p class="modal_title">Оставте свои данные, мы вам перезвоним</p>
+            <form class="modal_form">
+                <label for="user-name" class="form_user_atridut">Имя</label>
+                <div class="form_field">
+                    <input type="text" class="modal_input" name="user-name" id="user-name" required>
+                    <svg class="form_icon" width="12" height="12">
+                        <use href="./image/iconns.svg#icon-person-black"></use>
+                    </svg>
+                </div>
+                <label for="user-telefon" class="form_user_atridut"> Телефон</label>
+                <div class="form_field">
+                    <input type="tel" class="modal_input" name="user-telefon" id="user-telefon" required>
+                    <svg class="form_icon" width="13" height="13">
+                        <use href="./image/iconns.svg#icon-phone-black"></use>
+                    </svg>
+                </div>
+                <label for="user-mail" class="form_user_atridut">Почта</label>
+                <div class="form_field">
+                    <input type="email" class="modal_input" name="user-mail" id="user-mail" required>
+                    <svg class="form_icon" width="15" height="12">
+                        <use href="./image/iconns.svg#icon-email-black"></use>
+                    </svg>
+                </div>
+                <label for="comment" class="form_user_atridut">Коментарии</label>
+                <textarea for="comment" class="modal_text" id="comment" placeholder="Введите текст" required></textarea>
+                <div class="form_feild">
+                    <input type="checkbox" class="modal_chekbox visually-hidden " name="modal_chekbox" id="modal_chekbox">
+                    <label for="modal_chekbox" class="modal_chekbox_text">Соглашаюсь с рассылкой и принимаю <span><a
+                                class="modal_blu" href=""> Условия договора</span></a></label>
+                    <button type="submit" class="bnt_submit">
+                        <p class="bnt_text">ОТПРАВИТЬ</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script> -->
+</body>
+</html>

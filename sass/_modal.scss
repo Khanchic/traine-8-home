@@ -1,0 +1,207 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background: #ffffff;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 40px;
+    padding-left: 41px;
+    padding-bottom: 40px;
+    padding-right: 39px;
+}
+
+.model_buttom {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    top: 8px;
+    right: 8px;
+}
+
+.model_buttom:hover .modal_x {
+    fill: #2196f3;
+}
+
+.modal_x:hover,
+.modal_x:focus {
+    fill: #2196f3;
+}
+
+.modal_title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.form_user_atridut {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal_input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_input:hover,
+.modal_input:focus {
+    border: 1px solid #2196f3;
+}
+
+.modal_input:hover+.form_icon {
+    fill: #2196f3;
+}
+
+.modal_input:focus+.form_icon {
+    fill: #2196f3;
+}
+
+.modal_text {
+    width: 448px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    padding: 16px 12px;
+    color: #000;
+    resize: none;
+    text-decoration: none;
+}
+
+.modal_text:hover {
+    border: 1px solid #2196f3;
+}
+
+.modal_text::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal_chekbox:hover,
+.modal_chekbox:focus {
+    border: #2196f3;
+}
+
+.modal_chekbox:checked+.modal_chekbox_text::before {
+    background-image: url(../image/true.svg);
+    border: 0;
+}
+
+.modal_chekbox_text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    display: block;
+    margin-top: 4.5px;
+    margin-right: 5px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_chekbox_text {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 12px;
+    margin-top: 20px;
+}
+
+.form_field {
+    position: relative;
+}
+
+.modal_blu {
+    color: #2196f3;
+    text-decoration: underline;
+    padding-left: 2.5px;
+}
+
+.form_icon {
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+
+.bnt_submit {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    justify-content: center;
+    position: absolute;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    right: 165px;
+    left: 163px;
+}
+
+.bnt_text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}

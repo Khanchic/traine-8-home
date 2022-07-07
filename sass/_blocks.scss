@@ -1,0 +1,32 @@
+.section-1__title {
+  margin-bottom: 40px;
+}
+
+.block-1 {
+  border: 2px solid white;
+}
+.block-1__item {
+  padding-top: 20px;
+  width: 100%;
+  height: 100px;
+  font-size: 32px;
+  text-align: center;
+  align-items: center;
+  color: beige;
+  border: 2px solid lightpink;
+  &__grey {
+    background-color: gray;
+  }
+  &__black {
+    background-color: black;
+  }
+  &__green {
+    background-color: green;
+  }
+  &__red {
+    background-color: red;
+  }
+  &__blue {
+    background-color: blue;
+  }
+}
