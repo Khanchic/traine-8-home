@@ -1,0 +1,14 @@
+@import "./logo";
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-blocks {
+  display: flex;
+  align-items: baseline;
+}
+
+@import "./page-footer/footer-block-1";
+@import "./page-footer/footer-block-2";
+@import "./page-footer/footer-block-3";

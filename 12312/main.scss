@@ -1,0 +1,15 @@
+@import "./base/reset";
+@import "./utils/vars";
+@import "./components/page-header";
+// Главная начало
+@import "./main-page/hero";
+@import "./modal";
+@import "./main-page/block-1";
+@import "./main-page/about-us";
+@import "./main-page/team";
+@import "./main-page/regular-clients";
+// Главная конец
+
+@import "./components/page-footer";
+
+@import "./main-mobi";

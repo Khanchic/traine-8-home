@@ -1,0 +1,13 @@
+@import "./logo";
+.header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-block {
+  display: flex;
+  align-items: center;
+  transition: color;
+}
+@import "./page-header/heared-block_navigation";
+@import "./page-header/heared-block_connect";

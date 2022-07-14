@@ -1,0 +1,215 @@
+@import "./logo";
+.header {
+  position: relative;
+  @media (min-width: 480px) {
+  }
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-block .header-block__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-block__page {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-block__navigation__button {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.navigation__button__icon-open {
+}
+.header-block__navigation__button .navigation__button__icon-close {
+  display: none;
+}
+
+.header-block__navigation__button.is-open .navigation__button__icon-close {
+  display: block;
+}
+.header-block__navigation__button.is-open .navigation__button__icon-open {
+  display: none;
+}
+
+.header__mobile-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  background-color: tan;
+  padding: 20px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: 769px;
+    &.is-open {
+      display: block;
+    }
+  }
+}
+.mobile-container__link {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-block__navigation {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+  &-position {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.header-block__mail {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $colorblue;
+    }
+    &:focus {
+      color: $colorblue;
+    }
+    &:hover .mail-icon {
+      fill: $colorblue;
+    }
+    &:focus .mail-icon {
+      fill: $colorblue;
+    }
+  }
+}
+.header-block__connect {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.header-block__telefon {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+    text-align: center;
+  }
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $colorblue;
+  }
+  &:hover .telefon-icon {
+    fill: $colorblue;
+  }
+  &:focus {
+    color: $colorblue;
+  }
+  &:focus .telefon-icon {
+    fill: $colorblue;
+  }
+}
+.mobile-container__list-links {
+  display: flex;
+  padding-left: 20px;
+}
+.mobile-container__item {
+  margin-right: 20px;
+  &::before {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  align-items: center;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $colorblue;
+  }
+}
+.telefon-icon {
+  width: 10px;
+  height: 16px;
+  align-items: center;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $colorblue;
+  }
+}

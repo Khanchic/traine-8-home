@@ -1,0 +1,89 @@
+.header-block__connect {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.header-block__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header-block__mail {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $colorblue;
+  }
+  &:focus {
+    color: $colorblue;
+  }
+  &:hover .mail-icon {
+    fill: $colorblue;
+  }
+  &:focus .mail-icon {
+    fill: $colorblue;
+  }
+}
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  align-items: center;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $colorblue;
+  }
+}
+.header-block__telefon {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $colorblue;
+  }
+  &:hover .telefon-icon {
+    fill: $colorblue;
+    
+  }
+  &:focus {
+    color: $colorblue;
+  }
+  &:focus .telefon-icon {
+    fill: $colorblue;
+  }
+}
+.telefon-icon {
+  width: 10px;
+  height: 16px;
+  align-items: center;
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $colorblue;
+  }
+}
